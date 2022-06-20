@@ -7,7 +7,8 @@
     "node" : "14.x"
   },
   "scripts": {
-    "start": "node app.js"
+    "start": "./node_modules/.bin/netlify-lambda serve src",
+    "build": "./node_modules/.bin/netlify-lambda build src"
   },
   "dependencies": {
     "cors": "^2.8.5",
